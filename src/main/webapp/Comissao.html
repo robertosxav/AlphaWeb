@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="estilo2.css">
+    </head>
+    <body>
+        <div class="top">AlphaCosmeticos - Tela de Comissão</div>
+        
+        <div class="esquerdaSuperior">
+            
+            <label>Vendedor</label>
+            <input  style="width: 375px" type="text" name="txtVendedor" placeholder="nome"/>
+            
+            <p></p>
+            
+            <label>Data Inicial</label>
+            <input type="date" name="txtDtInicial" min="1970-01-01" max="2020-12-31"/>
+            
+            <label>Data Final</label>
+            <input type="date" name="txtDtFinal" min="1970-01-01" max="2020-12-31"/>
+            
+            <p></p>
+            
+            <label>Valor</label>
+            <input type="text" name="txtValor" placeholder="$00,00"/>
+            
+            <input class="btn" type="button" name="btnProcurar"
+               value="Procurar"
+            />
+            
+            <p></p>
+            <p></p>
+            <input class="btn" type="button" name="btnGerarRelatorio"
+               value="Gerar Relatório"
+            />
+            
+        </div>
+        
+        <div class="direitaSuperior">
+            <div class="pieContainer">
+                <div class="pieBackground"></div>
+                <div id="pieSlice1" class="hold"><div class="pie"></div></div>
+                <div id="pieSlice2" class="hold"><div class="pie"></div></div>
+                <div id="pieSlice3" class="hold"><div class="pie"></div></div>
+                <div id="pieSlice4" class="hold"><div class="pie"></div></div>
+            </div>
+        </div>
+        
+        <div class="direitaSuperior2">
+            <input type="texte" class="valor" id="semanalLoja"/>
+            <label style="margin-top: 0">Venda semanal da Loja</label>
+            
+            <p></p>
+            
+            <input type="texte" class="valor" id="semanalVendedor"/>
+            <label style="margin-top: 0">Venda semanal do Vendedor</label>
+            
+            <p></p>
+            
+            <input type="texte" class="valor" id="mensalLoja"/>
+            <label style="margin-top: 0">Venda mensal da Loja</label>
+            
+            <p></p>
+            
+            <input type="texte" class="valor" id="mensalVendedor"/>
+            <label style="margin-top: 0">Venda mensal do Vendedor</label>
+        </div>
+        
+        <div class="centro">
+            <table border=1px" cellpadding=5px" cellspacing=0" width="100%" ID="alter">
+                <tr>
+                    <th >Vendedor</th>
+                    <th>Data Prevista</th>
+                    <th>Valor da Comissão</th>
+                    <th>Situação da Parcela</th>
+                </tr>
+                
+                <tr>
+                    <td>Vendedor</td>
+                    <td>Data Prevista</td>
+                    <td>Valor da Comissão</td>
+                    <td>Situação da Parcela</td>
+                </tr>
+                
+                <tr>
+                    <td>Vendedor</td>
+                    <td>Data Prevista</td>
+                    <td>Valor da Comissão</td>
+                    <td>Situação da Parcela</td>
+                </tr>
+                
+                <tr>
+                   <td>Vendedor</td>
+                    <td>Data Prevista</td>
+                    <td>Valor da Comissão</td>
+                    <td>Situação da Parcela</td>
+                </tr>
+                
+                <tr>
+                    <td>Vendedor</td>
+                    <td>Data Prevista</td>
+                    <td>Valor da Comissão</td>
+                    <td>Situação da Parcela</td>
+                </tr>
+                
+                <tr>
+                    <td>Vendedor</td>
+                    <td>Data Prevista</td>
+                    <td>Valor da Comissão</td>
+                    <td>Situação da Parcela</td>
+                </tr>
+                
+                <tr>
+                   <td>Vendedor</td>
+                    <td>Data Prevista</td>
+                    <td>Valor da Comissão</td>
+                    <td>Situação da Parcela</td>
+                </tr>
+                
+                <tr>
+                   <td>Vendedor</td>
+                    <td>Data Prevista</td>
+                    <td>Valor da Comissão</td>
+                    <td>Situação da Parcela</td>
+                </tr>
+                
+                <tr>
+                    <td>Vendedor</td>
+                    <td>Data Prevista</td>
+                    <td>Valor da Comissão</td>
+                    <td>Situação da Parcela</td>
+                </tr>
+                
+            </table>
+            
+            
+            
+            
+        </div>
+        
+        <div class="inferior">
+            
+            <p></p>
+            
+            <input style="margin-left: 91%" class="btn" type="button" name="btnSair"
+               value="Sair"
+               onclick="window.open('Menu2.html', '_parent')"
+            />
+
+        </div>
+        
+    </body>
+</html>

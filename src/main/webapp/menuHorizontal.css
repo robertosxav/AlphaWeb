@@ -1,0 +1,130 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 25, 2016, 1:27:33 PM
+    Author     : Roberto Junior
+*/
+
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    margin: 30px auto;
+    margin-left: 65px;
+    margin-top: 30px;
+    width: 800 px;
+    height: 130px;
+}
+
+div.contenedor{
+    width: 200px;
+    height: 130px;
+    float:left;
+    -webkit-transition: height 0.4s;
+}
+
+div#um{
+    background-color: rgb(208,101,3);
+}
+
+div#dois{
+    background-color: rgb(233,147,26);
+}
+
+div#tres{
+    background-color: rgb(22,145,190);
+}
+
+div#quatro{
+    background-color: rgb(22,107,162);
+}
+
+div#cinco{
+    background-color: rgb(27,54,71);
+}
+
+div#seis{
+    background-color: rgb(21,40,54);
+
+}
+
+img.icone{
+    display: block;
+    margin:10px auto;
+    background-color: rgba(255,255,255,0.15);
+    width: 60px;
+    -webkit-border-radius: 50%;
+}
+
+
+p.texto{
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    opacity: 0.6;
+    -webkit-transition: padding-top 0.4s;
+}
+
+div.contenedor:hover{
+    height: 350px;
+}
+
+div.contenedor:hover p.texto{
+    padding-top: 30px;
+    opacity: 1;
+}
+
+div.contenedor:hover #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+    
+    
+}
+
+div.contenedor:hover #menu ul li {
+    position: relative;
+    font-size: 20px;
+    
+}
+
+div.contenedor:hover #menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-bottom: 0;
+    opacity: 1;
+    -webkit-transition: opacity 0.4s;
+}
+
+div.contenedor #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+
+}
+
+div.contenedor #menu ul li {
+    color:white;
+    
+}
+
+div.contenedor #menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    border-bottom: 0;
+    color:white;
+    opacity: 0;
+}
+
+

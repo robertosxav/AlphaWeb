@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Estilo1.css">
+    </head>
+    <body>
+        <div class="top">
+            AlphaCosmeticos- Tela de Contas á Pagar
+        </div>
+        <div class="esquerdaSuperior">
+            <p></p>
+            <label>Por</label>
+            <select name="slcPor"> 
+                <option value="DtVencimento">Data de Vencimento</option>
+                <option value="DtVencimento">Data de Pagamento</option>
+            </select>
+            
+            <label>Data Inicial</label>
+            <input type="date" name="txtDtInicial"
+                   min="1970-01-01" max="2020-12-31"/>
+            <label>Data Final</label>
+            <input type="date" name="txtDtFinal"
+                   min="1970-01-01" max="2020-12-31"/>
+            <p></p>
+            <p></p>
+            <p></p>
+            
+            <label> Cliente</label>
+            <input type="text" name="txtCnpj"
+               placeholder="CNPJ"
+                />
+            
+            <input type="text" id="RazaoSocial" name="txtRazaoSocial"
+               placeholder="Razão Social"
+               required="required" />
+            
+            <input style="width: 70px" class="btn" type="button" name="btnProcurar"
+               value="Procurar"
+               
+            />
+            <p></p>
+            <p></p>
+            <label> Situação</label>
+            
+            <input type="radio" name="rdbAberto" value="Aberto">Em aberto</input>
+            <input type="radio" name="rdbVencido" value="Vencido">Vencido</input>
+            <input type="radio" name="rdbTodos" value="Todos" checked="checked">Todos</input>
+            
+        </div>
+        
+        <div class="direitaSuperior">
+            <label>Totais no período</label>
+            <p></p>
+            <input type="text" class="valor" id="vencidosMais30"></input>
+            <label> Vencidos +30</label>
+            <input type="text" placeholder="$00,00"></input>
+            
+            <p></p>
+            
+            <input type="text" class="valor" id="vencidos"></input>
+            <label> Vencidos 30</label>
+            <input id="venc" type="text" placeholder="$00,00"></input>
+            
+            <p></p>
+            
+            <input type="text" class="valor" id="aberto"></input>
+            <label> Aberto</label>
+            <input id="abt" type="text" placeholder="$00,00"></input>
+        </div>
+        <div class="centro">
+            <table border=1px" cellpadding=5px" cellspacing=0" width="100%" ID="alter">
+                <tr>
+                    <th >Data de lançamento </th>
+                    <th>Data de vencimento</th>
+                    <th>Cliente</th>
+                    <th>valor</th>
+                    <th>Situação</th>
+                </tr>
+                
+                <tr class="verm">
+                    <td>Data de lançamento </td>
+                    <td>Data de vencimento</td>
+                    <td>Cliente</td>
+                    <td>valor</td>
+                    <td>Situação</td>
+                </tr>
+                
+                <tr class="verm">
+                    <td>Data de lançamento </td>
+                    <td>Data de vencimento</td>
+                    <td>Cliente</td>
+                    <td>valor</td>
+                    <td>Situação</td>
+                </tr>
+                
+                <tr class="verm">
+                    <td>Data de lançamento </td>
+                    <td>Data de vencimento</td>
+                    <td>Cliente</td>
+                    <td>valor</td>
+                    <td>Situação</td>
+                </tr>
+                
+                <tr class="verde">
+                    <td>Data de lançamento </td>
+                    <td>Data de vencimento</td>
+                    <td>Cliente</td>
+                    <td>valor</td>
+                    <td>Situação</td>
+                </tr>
+                
+                <tr class="rosa">
+                    <td>Data de lançamento </td>
+                    <td>Data de vencimento</td>
+                    <td>Cliente</td>
+                    <td>valor</td>
+                    <td>Situação</td>
+                </tr>
+                
+                <tr class="rosa">
+                    <td>Data de lançamento </td>
+                    <td>Data de vencimento</td>
+                    <td>Cliente</td>
+                    <td>valor</td>
+                    <td>Situação</td>
+                </tr>
+                
+                <tr class="verde">
+                    <td>Data de lançamento </td>
+                    <td>Data de vencimento</td>
+                    <td>Cliente</td>
+                    <td>valor</td>
+                    <td>Situação</td>
+                </tr>
+                
+                <tr class="verde">
+                    <td>Data de lançamento </td>
+                    <td>Data de vencimento</td>
+                    <td>Cliente</td>
+                    <td>valor</td>
+                    <td>Situação</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+        <div class="inferior"> 
+            <p></p>
+            <label>Data Pagamento</label>
+            <input type="date" name="txtDtPagamento"
+                   min="1970-01-01" max="2020-12-31"/>
+            
+            
+            <label>Valor á Pagar</label>
+            <input type="text" placeholder="$00,00"> 
+            <input style="margin-left: 650px" class="btn" type="button" name="btnVisualizar"
+               value="Visualizar"
+               
+            />
+            
+            <p></p>
+            <label style="margin-left: 36px">Juros</label>
+            <input type="text" placeholder="$00,00">
+            
+            <label style="margin-left: 31px">Desconto</label>
+            <input type="text" placeholder="$00,00">
+            
+            <input style="margin-left: 650px" class="btn" type="button" name="btnBaixarDivida"
+               value="Baixar Dívida"
+               
+            />
+            <p></p>
+            <label style="margin-left: 36px">Total</label>
+            <input type="text" placeholder="$00,00">
+            
+            <input  class="btn" type="button" name="btnCalcular"
+               value="Calcular"
+               
+            />
+            
+            <input style="margin-left: 857px" class="btn" type="button" name="btnSair"
+               value="Sair"  onclick="window.open('Menu2.html', '_parent')"
+               
+            />
+            
+        </div>
+       
+    </body>
+</html>
