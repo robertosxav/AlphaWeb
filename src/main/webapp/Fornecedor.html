@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">   
+<title> Cadastro de Fornecedor</title>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background-color: #ddd;
+    font-family: 'Arial';   
+}
+
+.nav_tabs{
+    width: 1200px;
+    height: 600px;
+    margin: 100px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.nav_tabs ul{
+    list-style: none;
+}
+
+.nav_tabs ul li{
+    float: left;
+}
+
+.nav_tabs label{
+    width: 100px;
+    padding: 25px;
+    background-color: #363b48;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.rd_tabs:checked ~ label{
+    background-color: #e54e43;
+}
+
+.rd_tabs{
+    display: none; 
+}
+
+.content{
+    border-top: 5px solid #e54e43;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    height: 320px;
+    width: 1200px;
+    left: 0;   
+}
+
+.rd_tabs:checked ~ .content{
+    display: block;
+}
+
+.content article{
+    padding: 10px;
+}
+
+</style>
+
+</head>
+    <body>
+        <nav class ="nav_tabs">
+         <ul>
+             <li>
+                 <input type="radio" name = "tabs" class = "rd_tabs" id="tab1"
+                 checked>
+                 <label for = "tab1">Fornecedor</label>
+                 <div class ="content">
+                     <article>
+                         <input class="btn" type="button" name="btnAlterar"
+                         accept=""value="Alterar" id="botao_Alterar"/>
+                        <style type="text/css">
+                        #botao_Alterar {
+                                position:absolute;
+                                left:90%;
+                                top:260%;
+                                width: 100px;
+                                height: 25px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                       </style>
+       
+                        <input class="btn" type="button" name="btnExcluir"
+                        value="Excluir" id="botao_Excluir"/>
+                        <style type="text/css">
+                        #botao_Excluir {
+                                position:absolute;
+                                left:100%;
+                                top:260%;
+                                width: 100px;
+                                height: 25px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                       </style>
+                         <div class="centro">
+            <table border=1px" cellpadding=5px" cellspacing=0" width="100%" ID="alter">
+                <tr>
+                    <th>Razão Social</th> 
+                    <th>Nome Fantasia</th>
+                    <th>CNPJ</th>
+                    <th>Inscrição Estadual</th>
+                    <th>Banco</th>
+                    <th>E-mail</th>
+                    <th>Logradouro</th>
+                    <th>Número</th>
+                    <th>CEP</th>
+                    <th>Bairro</th>
+                </tr>
+                
+                <tr>
+                    <td>João Paulo Preti</td>
+                    <td>João Paulo</td>
+                    <td>123456789</td>
+                    <td>000</td>
+                    <td>Banco do Brasil</td>
+                    <td>adamzzunoeta@hotmail.com</td>
+                    <td>Rua São Paulo</td>
+                    <td>196</td>
+                    <td>78090-123</td>
+                    <td>Cidade Alta</td>
+                </tr>
+                
+                <tr>
+                    <td>João Paulo Preti</td>
+                    <td>João Paulo</td>
+                    <td>123456789</td>
+                    <td>000</td>
+                    <td>Banco do Brasil</td>
+                    <td>adamzzunoeta@hotmail.com</td>
+                    <td>Rua São Paulo</td>
+                    <td>196</td>
+                    <td>78090-123</td>
+                    <td>Cidade Alta</td>
+                </tr>
+                
+                <tr>
+                    <td>João Paulo Preti</td>
+                    <td>João Paulo</td>
+                    <td>123456789</td>
+                    <td>000</td>
+                    <td>Banco do Brasil</td>
+                    <td>adamzzunoeta@hotmail.com</td>
+                    <td>Rua São Paulo</td>
+                    <td>196</td>
+                    <td>78090-123</td>
+                    <td>Cidade Alta</td>
+                </tr>
+                
+                <tr>
+                    <td>João Paulo Preti</td>
+                    <td>João Paulo</td>
+                    <td>123456789</td>
+                    <td>000</td>
+                    <td>Banco do Brasil</td>
+                    <td>adamzzunoeta@hotmail.com</td>
+                    <td>Rua São Paulo</td>
+                    <td>196</td>
+                    <td>78090-123</td>
+                    <td>Cidade Alta</td>
+                </tr>
+                
+                <tr>
+                    <td>João Paulo Preti</td>
+                    <td>João Paulo</td>
+                    <td>123456789</td>
+                    <td>000</td>
+                    <td>Banco do Brasil</td>
+                    <td>adamzzunoeta@hotmail.com</td>
+                    <td>Rua São Paulo</td>
+                    <td>196</td>
+                    <td>78090-123</td>
+                    <td>Cidade Alta</td>
+                </tr>
+                
+                <tr>
+                    <td>João Paulo Preti</td>
+                    <td>João Paulo</td>
+                    <td>123456789</td>
+                    <td>000</td>
+                    <td>Banco do Brasil</td>
+                    <td>adamzzunoeta@hotmail.com</td>
+                    <td>Rua São Paulo</td>
+                    <td>196</td>
+                    <td>78090-123</td>
+                    <td>Cidade Alta</td>
+                </tr>
+                
+                <tr>
+                    <td>João Paulo Preti</td>
+                    <td>João Paulo</td>
+                    <td>123456789</td>
+                    <td>000</td>
+                    <td>Banco do Brasil</td>
+                    <td>adamzzunoeta@hotmail.com</td>
+                    <td>Rua São Paulo</td>
+                    <td>196</td>
+                    <td>78090-123</td>
+                    <td>Cidade Alta</td>
+                </tr>
+                
+                <tr>
+                    <td>João Paulo Preti</td>
+                    <td>João Paulo</td>
+                    <td>123456789</td>
+                    <td>000</td>
+                    <td>Banco do Brasil</td>
+                    <td>adamzzunoeta@hotmail.com</td>
+                    <td>Rua São Paulo</td>
+                    <td>196</td>
+                    <td>78090-123</td>
+                    <td>Cidade Alta</td>
+                </tr>
+            </table>
+        </div>
+                     </article>
+                 </div>
+             </li>
+             
+             <li>
+                 <input type="radio" name = "tabs" class = "rd_tabs" id="tab2">
+                 <label for = "tab2">Editar</label>
+                 <div class ="content">
+                     <article>
+                         <input class="btn" type="button" name="btnSalvar"
+                         accept=""value="Salvar" id="botao_Salvar"/>
+                        <style type="text/css">
+                        #botao_Salvar {
+                                position:absolute;
+                                left:90%;
+                                top:260%;
+                                width: 100px;
+                                height: 25px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                       </style>
+       
+                        <input class="btn" type="button" name="btnLimpar"
+                        value="Limpar" id="botao_Limpar"/>
+                        <style type="text/css">
+                        #botao_Limpar {
+                                position:absolute;
+                                left:100%;
+                                top:260%;
+                                width: 100px;
+                                height: 25px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                       </style>
+                         <center> <b>Dados do Fornecedor</b> </center> <br>
+                         Razão Social <br> <br> 
+                         Nome Fantasia <br> <br>
+                         CNPJ <br> <br> 
+                         Inscrição Estadual <br> <br> 
+                         Banco <br> <br> 
+                         E-mail <br> <br> <br>
+                         <center> <b>Endereço</b> </center> <br>
+                         Logradouro <br> <br> 
+                         Número <br> <br>
+                         CEP <br> <br>
+                         Bairro <br> <br> 
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça a Razão Social" 
+                          id="texto_Razao_Social"/>
+                         <style type="text/css">
+                                #texto_Razao_Social{
+                                position:absolute;
+                                left:60%;
+                                top:104%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça o Nome Fantasia" 
+                          id="texto_Nome_Fantasia"/>
+                         <style type="text/css">
+                                #texto_Nome_Fantasia{
+                                position:absolute;
+                                left:60%;
+                                top:115%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça o CNPJ" 
+                          id="texto_CNPJ"/>
+                         <style type="text/css">
+                                #texto_CNPJ{
+                                position:absolute;
+                                left:60%;
+                                top:126%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça a Inscrição Estadual" 
+                          id="texto_Inscricao"/>
+                         <style type="text/css">
+                                #texto_Inscricao{
+                                position:absolute;
+                                left:60%;
+                                top:137%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça o Banco" 
+                          id="texto_Banco"/>
+                         <style type="text/css">
+                                #texto_Banco{
+                                position:absolute;
+                                left:60%;
+                                top:148%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça o E-mail" 
+                          id="texto_Email"/>
+                         <style type="text/css">
+                                #texto_Email{
+                                position:absolute;
+                                left:60%;
+                                top:159%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+                         
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça o Logradouro" 
+                          id="texto_Logradouro"/>
+                         <style type="text/css">
+                                #texto_Logradouro{
+                                position:absolute;
+                                left:60%;
+                                top:188%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça o Número" 
+                          id="texto_Numero"/>
+                         <style type="text/css">
+                                #texto_Numero{
+                                position:absolute;
+                                left:60%;
+                                top:199%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça o CEP" 
+                          id="texto_CEP"/>
+                         <style type="text/css">
+                                #texto_CEP{
+                                position:absolute;
+                                left:60%;
+                                top:210%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+                         
+                         <input type="text" name="txtValor" placeholder="Forneça o Bairro" 
+                          id="texto_Bairro"/>
+                         <style type="text/css">
+                                #texto_Bairro{
+                                position:absolute;
+                                left:60%;
+                                top:221%;
+                                width: 500px;
+                                height: 20px;
+                                margin-left:-500px;
+                                margin-top:-290px;
+                                }
+                         </style>
+
+                     </article>
+                 </div>
+             </li>
+          </ul>
+        </nav>
+        
+        <input type="text" name="txtValor" placeholder="Digite a razão social ou parte dela para realizar a pesquisa" 
+        id="texto_botao_Pesquisar"/>
+        <style type="text/css">
+	#texto_botao_Pesquisar {
+		position:absolute;
+		left:72%;
+		top:55%;
+                width: 500px;
+                height: 21px;
+		margin-left:-500px;
+		margin-top:-290px;
+		}
+       </style>
+        
+        
+        <input class="btn" type="button" name="btnPesquisar"
+               value="Pesquisar" id="botao_Pesquisar"
+        />
+        <style type="text/css">
+	#botao_Pesquisar {
+		position:absolute;
+		left:110%;
+		top:55%;
+                width: 100px;
+                height: 25px;
+		margin-left:-500px;
+		margin-top:-290px;
+		}
+       </style>
+           
+</body>
+</html>
+    
+
