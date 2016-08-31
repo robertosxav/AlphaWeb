@@ -1,0 +1,163 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color:whitesmoke;
+}
+
+div.interna {
+    float: left;
+    border: 1px solid yellow;
+    min-width: 100px;
+    max-width: 150px;
+    height: 20%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+
+div.toolbar{
+    position: relative;
+    font-family: sans-serif;
+    font-size: 24px;
+    width: 100%;
+    height: 7%;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 10px;
+
+}
+
+/*
+div.toolbar {
+    width: 100%;
+    height: 70px;
+    border: 1px solid red;
+}
+*/
+
+div.esquerda {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+    height: 800px;
+}
+
+div.direita {
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    top: 70px;
+    height: 800px;
+    border: 1px solid black;
+}
+
+div.centro {
+    margin-left: 200px;
+    margin-right: 200px;
+    border: none;
+    height: 70px;
+}
+
+div.rodape {
+    position: fixed;
+    border-top: 2px solid black;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: whitesmoke;
+    /*border: 1px solid blue;*/
+}
+
+input.btn{
+    height: 25px;
+    width: 100px;
+    margin-right: 0px;
+}
+
+
+
+#content
+{
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#tabs ul
+{
+    font: normal 14px arial, sans, sans-serif;
+    -list-style-type: none;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding-left:0;
+    padding-right:0;
+    padding-bottom: 26px;
+}
+
+#tabs ul li 
+{
+    display: inline;
+    float: left;
+    height: 24px;
+    min-width:80px;
+    text-align:center;
+    padding:0;
+    margin: 1px 0px 0px 0px;
+    border: 1px solid gray;
+}
+
+#tabs ul li.selected 
+{
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+}
+
+
+#tabs ul li a 
+{
+    float: left;
+    color: #666;
+    text-decoration: none;
+    padding: 4px;
+    text-align:center;
+    background-color:#eee;
+    min-width:80px;
+    border-bottom: 1px solid gray;
+}
+
+#tabs ul li a.selected
+{
+    color: #000;
+    font-weight:bold;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+#tabs ul li a:hover
+{
+    color: #000;
+    font-weight:bold;
+    background-color: #fff;
+}
+
+#container 
+{
+    background:whitesmoke;
+    border:1px solid gray;
+    border-top: none;
+    height:740px;
+    width:100%;
+    padding:0;
+    margin:0;
+    left:0;
+    top:0;	
+}
+
+iframe
+{
+    border:none;
+    margin:0;
+    padding:0;
+}

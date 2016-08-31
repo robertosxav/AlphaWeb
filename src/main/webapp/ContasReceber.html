@@ -42,7 +42,7 @@ and open the template in the editor.
                placeholder="Razão Social"
                required="required" />
             
-            <input style="width: 70px" class="btn" type="button" name="btnProcurar"
+            <input style="width:70px" class="btn" type="button" name="btnProcurar"
                value="Procurar"
                
             />
@@ -50,11 +50,11 @@ and open the template in the editor.
             <p></p>
             <label> Situação</label>
             
-            <input type="radio" name="rdbAberto" value="Aberto">Em aberto</input>
-            <input type="radio" name="rdbVencido" value="Vencido">Vencido</input>
-            <input type="radio" name="rdbTodos" value="Todos" checked="checked">Todos</input>
+            <input type="radio" name="status" value="Aberto">Em aberto</input>
+            <input type="radio" name="status" value="Vencido">Vencido</input>
+            <input type="radio" name="status" value="Todos" checked="checked">Todos</input>
             
-            <label style="margin-left: 30px">Forma de pagamento</label>
+            <label style="margin-left: 10%">Forma de pagamento</label>
             
             <select >
                 <option value="boleto">Boleto</option>
@@ -67,24 +67,24 @@ and open the template in the editor.
         <div class="direitaSuperior">
             <label>Totais no período</label>
             <p></p>
-            <input type="text" class="valor" id="vencidosMais30"></input>
+            <input type="text" class="valor" id="vencidosMais30" disabled="true"></input>
             <label> Vencidos +30</label>
             <input type="text" placeholder="$00,00"></input>
             
             <p></p>
             
-            <input type="text" class="valor" id="vencidos"></input>
+            <input type="text" class="valor" id="vencidos" disabled="true"></input>
             <label> Vencidos 30</label>
             <input id="venc" type="text" placeholder="$00,00"></input>
             
             <p></p>
             
-            <input type="text" class="valor" id="aberto"></input>
+            <input type="text" class="valor" id="aberto" disabled="true"></input>
             <label> Aberto</label>
             <input id="abt" type="text" placeholder="$00,00"></input>
         </div>
         <div class="centro">
-            <table border=1px" cellpadding=5px" cellspacing=0" width="100%" ID="alter">
+            <table border=1%" cellpadding=5%" cellspacing=0" width="100%" ID="alter">
                 <tr>
                     <th >Data de lançamento </th>
                     <th>Data de vencimento</th>
@@ -163,23 +163,23 @@ and open the template in the editor.
             
             <label>Valor á Pagar</label>
             <input type="text" placeholder="$00,00"> 
-            <input style="margin-left: 650px" class="btn" type="button" name="btnVisualizar"
+            <input style="margin-left: 90%" class="btn" type="button" name="btnVisualizar"
                value="Visualizar"
             />
             
             <p></p>
-            <label style="margin-left: 36px">Juros</label>
+            <label style="margin-left: 5%">Juros</label>
             <input type="text" placeholder="$00,00">
             
-            <label style="margin-left: 31px">Desconto</label>
+            <label style="margin-left: 0%">Desconto</label>
             <input type="text" placeholder="$00,00">
             
-            <input style="margin-left: 650px" class="btn" type="button" name="btnBaixarDivida"
+            <input style="margin-left: 90%" class="btn" type="button" name="btnBaixarDivida"
                value="Baixar Dívida"
                
             />
             <p></p>
-            <label style="margin-left: 36px">Total</label>
+            <label style="margin-left: 5%">Total</label>
             <input type="text" placeholder="$00,00">
             
             <input  class="btn" type="button" name="btnCalcular"
@@ -187,7 +187,7 @@ and open the template in the editor.
                
             />
             
-            <input style="margin-left: 857px" class="btn" type="button" name="btnSair"
+            <input style="margin-left: 90%" class="btn" type="button" name="btnSair"
                value="Sair" onclick="window.open('Menu.html', '_parent')"
             
             />

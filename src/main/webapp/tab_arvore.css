@@ -1,0 +1,46 @@
+
+
+label.texto {
+    margin-left: 100px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;  
+}
+
+label.item {
+    margin-left: 240px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;  
+}
+
+textarea.texto_area {
+    margin-left: 175px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    width: 400px;
+    height: 140px;
+}
+
+/*botoes*/
+ul {
+    /*margin-left: 165px;*/
+    margin-left: 160px;
+    list-style-type: none;
+    height: 100px;
+}
+
+ul li {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+p.botao_voltar {
+    margin-left: 300px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+

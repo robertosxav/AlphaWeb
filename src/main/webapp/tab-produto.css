@@ -1,0 +1,22 @@
+table.produto {
+    border-style: solid;
+    border-color: #666;
+    align-content: center;
+    /*align: center;*/
+}
+
+/*botoes*/
+ul {
+    /*margin-left: 165px;*/
+    margin-left: 60px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    list-style-type: none;
+    height: 100px;
+}
+
+ul li {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
