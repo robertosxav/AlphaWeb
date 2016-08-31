@@ -13,6 +13,7 @@ html, body {
     height: 100%;
     margin: auto;
     background-color:whitesmoke;
+    
 }
 
 div.top{
@@ -57,7 +58,6 @@ div.centro2{
     height: 45%;
     width: 98%;
     border-top: 2px;
-    margin: 1px;
 }
 div.inferior{
     position: absolute;
