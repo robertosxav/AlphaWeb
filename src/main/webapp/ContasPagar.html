@@ -49,28 +49,28 @@ and open the template in the editor.
             <p></p>
             <label> Situação</label>
             
-            <input type="radio" name="rdbAberto" value="Aberto">Em aberto</input>
-            <input type="radio" name="rdbVencido" value="Vencido">Vencido</input>
-            <input type="radio" name="rdbTodos" value="Todos" checked="checked">Todos</input>
+            <input type="radio" name="status" value="Aberto">Em aberto</input>
+            <input type="radio" name="status" value="Vencido">Vencido</input>
+            <input type="radio" name="status" value="Todos" checked="checked">Todos</input>
             
         </div>
         
         <div class="direitaSuperior">
             <label>Totais no período</label>
             <p></p>
-            <input type="text" class="valor" id="vencidosMais30"></input>
+            <input type="text" class="valor" id="vencidosMais30" disabled="true"></input>
             <label> Vencidos +30</label>
             <input type="text" placeholder="$00,00"></input>
             
             <p></p>
             
-            <input type="text" class="valor" id="vencidos"></input>
+            <input type="text" class="valor" id="vencidos" disabled="true"></input>
             <label> Vencidos 30</label>
             <input id="venc" type="text" placeholder="$00,00"></input>
             
             <p></p>
             
-            <input type="text" class="valor" id="aberto"></input>
+            <input type="text" class="valor" id="aberto" disabled="true"></input>
             <label> Aberto</label>
             <input id="abt" type="text" placeholder="$00,00"></input>
         </div>
@@ -160,7 +160,7 @@ and open the template in the editor.
             
             <label>Valor á Pagar</label>
             <input type="text" placeholder="$00,00"> 
-            <input style="margin-left: 650px" class="btn" type="button" name="btnVisualizar"
+            <input style="margin-left: 90%" class="btn" type="button" name="btnVisualizar"
                value="Visualizar"
                
             />
@@ -172,7 +172,7 @@ and open the template in the editor.
             <label style="margin-left: 31px">Desconto</label>
             <input type="text" placeholder="$00,00">
             
-            <input style="margin-left: 650px" class="btn" type="button" name="btnBaixarDivida"
+            <input style="margin-left: 90%" class="btn" type="button" name="btnBaixarDivida"
                value="Baixar Dívida"
                
             />
@@ -185,7 +185,7 @@ and open the template in the editor.
                
             />
             
-            <input style="margin-left: 857px" class="btn" type="button" name="btnSair"
+            <input style="margin-left: 90%" class="btn" type="button" name="btnSair"
                value="Sair"  onclick="window.open('Menu.html', '_parent')"
                
             />
