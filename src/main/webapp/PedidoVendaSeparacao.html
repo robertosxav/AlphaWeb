@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Alpha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="FolhaEstilo.css">
+    </head>
+    <body>
+        <div class="top">Pedido Venda - Separar</div>
+        
+        <div class="esquerdaSuperior">
+            
+            <label>  Identificação do Vendedor</label>
+            <input  style="width: 275px" type="text" name="idVendedor" />
+            
+
+            <label>Dt Lançamento</label>
+            <input type="date" name="txtDtLancamento" min="1970-01-01" max="2020-12-31"/>
+            
+            <label>Dt Aprovação</label>
+            <input type="date" name="txtDtAprovacao" min="1970-01-01" max="2020-12-31"/>
+            
+            <p></p>
+            
+            <label style="margin-left: -620px">Nome Vendedor</label>
+            <input type="text" name="txtNomeVendedor"/>
+            
+            <p></p>
+            
+            <label>Filtar por:</label>
+            <input class="rdb" type="radio" name="rdb" value="60dias">Próximos 60 dias
+            <input class="rdb" type="radio" name="rdb" value="30dias">Próximos 30 dias
+            <input class="rdb" type="radio" name="rdb" value="10dias">Próximos 10 dias
+            <input class="rdb" type="radio" name="rdb" value="semana">Próxima Semana
+            <input class="rdb" type="radio" name="rdb" value="semana">Data Atual
+            <p></p>
+            <p></p>
+ 
+        </div>
+        
+
+        <div class="centro" style="margin-left: 80px">
+            
+            <table border="1px" cellpadding="5px" cellspacing="0" width="80%" ID="alter">
+                <tr>
+                    <th >Id</th>
+                    <th>Produto</th>
+                    <th>Qtde Total</th>
+                    <th>Qtde Prevista</th>
+                    <th>Dt Prevista Qtde Estoque</th>
+                </tr>
+                
+                <tr>
+                    <td>. </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                   <td>.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                   <td>.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+        </div>
+        
+        <div class="inferior">
+            
+            <p></p>
+            <label>Dt Entrega</label>
+            <input type="date" name="DtEntrega"/>
+            <p></p>
+            <p></p>
+            <p></p>
+            <input style="height: 30px " class="btn" type="button" name="btnConfirmar"
+                   value="Confirmar Separação" 
+            />
+            <input style="height: 30px; margin-left: 400px; " class="btn" type="button" name="btnCancelar"
+                   value="Cancelar" 
+            />
+            <p></p>
+
+            <input style="height: 30px; margin-left: 80%; margin-top: 1%" class="btn" type="button" name="btnSair"
+                   value="Sair"  onclick="window.open('GerenteVendaEstoque.html','_parent')"
+            />
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,292 @@
+    
+
+html, body {
+    position:absolute;
+    float: left;
+    top:0;
+    left: 50px;
+    width:1024px;
+    height: 750px;
+    margin: auto;
+    align-content: center;
+    background-color: whitesmoke;
+
+
+}
+
+
+.norte{
+    position:relative;
+    float: left;
+    top:0;
+    left: 100px;
+    width:1024px;
+    height:20px;	
+
+
+}
+
+#titulo{
+    color:black;
+    font-size: 28px;
+    text-align: center;
+}
+
+.pesq1{
+    position:relative;
+    float: left;
+    top:40px;
+    left: 100px;
+    width: 500px;
+    height: 150px;
+
+}    
+.pesq2{
+    position:relative;
+    float:left;
+    top:40px;
+    left: 110px;
+    width: 500px;
+    height: 150px;
+
+}
+
+.tabela{
+    position:relative;
+    float: left;        
+    top:40px;
+    left: 100px;
+    width: 500px;
+    height: 490px;
+    margin-bottom: 10px;
+}
+
+div.texto{
+    position:relative;
+    float: left;
+    top:40px;
+    left: 110px;
+    width: 500px;
+    height: 490px;
+    margin-bottom: 10px;
+}
+
+
+
+.scrolTable{
+    position:relative;
+    float:left;
+    left: 100px;
+    top:50px;
+    overflow-y: scroll;
+    width: 500px;
+    height: 580px;
+}
+#table td{
+    height: 20px;
+    background-color: white;
+    align-content: center;
+}
+#table td:first-child{
+    width: 100px;
+}
+#table td:first-child+td{
+    width: 200px;
+}
+#table td:first-child+td+td{
+    width: 180px;
+}
+#table th{
+    height: 20px;
+    background-color: white;
+    align-content: center;
+}
+#table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    display: table-cell;
+    width: 500px;
+    height: 580px;
+}
+
+
+
+.scrolTabelaProduto{ 
+    position:relative;
+    float:left;
+    overflow-y: scroll;
+     width: 500px;
+    height: 200px;
+    margin: 1px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#tabelaProduto td{
+    height: 20px;
+    background-color: white;
+    align-content: center;
+}
+#tabelaProduto td:first-child{
+    width: 350px;
+}
+#tabelaProduto td:first-child+td{
+    width: 150px;
+}
+
+#tabelaProduto th{
+    height: 20px;
+    background-color: white;
+    align-content: center;
+}
+#tabelaProduto{
+    border-collapse: collapse;
+    width: 500px;
+    height: 200px;
+    margin: 1px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    empty-cells:hide;
+    display: table-cell;      
+}
+
+
+.scrolTabelaProdutoEstoque{ 
+    position:relative;
+    float:left;
+    overflow-y: scroll;
+     width: 500px;
+    height: 200px;
+    margin: 1px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#tabelaProdutoEstoque td{
+    height: 20px;
+    background-color: white;
+    align-content: center;
+}
+#tabelaProdutoEstoque td:first-child{
+    width: 300px;
+}
+#tabelaProdutoEstoque td:first-child+td{
+    width: 150px;
+}
+#tabelaProdutoEstoque td:first-child+td+td{
+    width: 100px;
+}
+
+#tabelaProdutoEstoque th{
+    height: 20px;
+    background-color: white;
+    align-content: center;
+}
+#tabelaProdutoEstoque{
+    border-collapse: collapse;
+    width: 500px;
+    height: 200px;
+    margin: 1px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    empty-cells:hide;
+    display: table-cell;      
+}
+
+
+
+
+
+.scrolTabelaCliente{
+    position:relative;
+    float:left;
+    overflow-y: scroll;
+     width: 500px;
+    height: 200px;
+}
+#tabelaCliente td{
+    height: 25px;
+    background-color: white;
+    align-content: center;
+}
+#tabelaCliente td:first-child{
+    width: 200px;
+}
+#tabelaCliente td:first-child+td{
+    width: 100px;
+}
+#tabelaCliente td:first-child+td+td{
+    width: 100px;
+}
+#tabelaCliente td:first-child+td+td+td{
+    width: 100px;
+}
+
+#tabelaCliente th{
+   
+    height: 20px;
+    background-color: white;
+    align-content: center;
+}
+
+#tabelaCliente{
+     width: 500px;
+    height: 200px;
+    margin: 1px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-collapse: collapse;
+    display: table-cell;
+    empty-cells:hide;
+}
+
+
+
+
+
+
+
+.inicio{
+    display: block;
+
+}
+.sair{
+    color: #ff0000;
+}
+
+.quebra{
+    display: block
+
+}
+.linha{
+    display: inline;
+
+}
+.cxcTxtData{
+    width: 100px;
+    height: 15px;
+
+}
+.combo{
+    width: 150px;
+    height: 20px;
+
+}
+.cxcLinha{
+    width: 100%;
+    height: 17px;
+
+}
+.AlinhaDireita{
+    float: right;
+
+}
+#cxcSituacao{
+    width: 120px;
+    height: 15px;
+}
+.cxcCNPJ{
+    width: 150px;
+    height: 15px;
+}
+
