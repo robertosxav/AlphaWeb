@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Alpha</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="FolhaEstilo.css">
+    </head>
+    <body>
+        <div class="top">Pedido Venda - Separar</div>
+        
+        <div class="esquerdaSuperior">
+            <label style="margin-right: 860px">  Cliente</label>
+            <p></p>
+            <label>  Nome</label>
+            <input  style="width: 560px" type="text" name="txtNome" />
+            
+
+            <label style="margin-left: 55px">Cidade</label>
+            <input type="text" name="cidade"/>
+            
+            <p></p>
+            
+            <label>Logradouro</label>
+            <input style="width: 300px" type="text" name="txtLogradouro" />
+            
+            <label>bairro</label>
+            <input type="text" name="txtBairro" />
+            
+            <label style="margin-left: 70px">CEP</label>
+            <input type="text" name="txtCep" />
+            
+            <p></p>
+            
+            <label style="margin-right: 805px">Detalhe Venda</label>
+            
+            <p></p>
+            
+            <label>Identificação da Venda</label>
+            <input type="text" name="txtIdVenda"/>
+            
+            <label>Dt Lançamento</label>
+            <input type="date" name="txtDtLancamento" min="1970-01-01" max="2020-12-31"/>
+            
+            <label>Dt Aprovação</label>
+            <input type="date" name="txtDtAprovacao" min="1970-01-01" max="2020-12-31"/>
+            
+            <p></p>
+            
+            <label>  Nome Vendedor</label>
+            <input  style="width: 490px" type="text" name="txtNome" />
+            
+            <label style="margin-left: 33px">Dt Envio</label>
+            <input type="date" name="txtDtEnvio" min="1970-01-01" max="2020-12-31"/>
+ 
+            <p></p>
+            
+            <label>Valor Total</label>
+            <input  style="width: 210px" type="text" name="txtValorTotal"/>
+            
+            <label>Qtde Total</label>
+            <input  style="width: 210px; margin-right: 290px" type="text" name="txtQtdeTotal"/>
+            
+            
+            <p></p>
+        </div>
+        
+
+        <div class="centro2" style="margin-left: 80px; margin-top: 10px; margin-bottom:40px; ">
+            
+            <table border="1px" cellpadding="5px" cellspacing="0" width="80%" ID="alter">
+                <tr>
+                    <th >Id</th>
+                    <th>Produto</th>
+                    <th>Qtde Vendida</th>    
+                </tr>
+                
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                   <td>.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                   <td>.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+        </div>
+        
+        <div class="inferior2" style="margin-top: 20px;">
+            
+           
+
+            <input style="height: 30px " class="btn" type="button" name="btnFinalizar"
+                   value="Aprovar Análize Estoque" 
+            />
+            <input style="height: 30px; margin-left: 400px; " class="btn" type="button" name="btnRecusar" 
+                   value="Recusar" 
+            />
+            
+
+            <input style="height: 30px; margin-left: 80%; margin-top: 1%" class="btn" type="button" name="btnSair"
+                   value="Sair"  onclick="window.open('GerenteVendaEstoque.html','_parent')"
+            />
+        </div>
+        
+    </body>
+</html>

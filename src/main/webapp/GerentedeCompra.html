@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Alpha</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="GerentedeCompra.css">
+    </head>
+    <body>
+        
+        <div id="pagina">
+            
+            <div class="norte"> 
+                <h1 id="titulo"> Pedido de Compra</h1>
+            </div>
+            
+            <div class="pesq1">
+                <label> Fornecedor </label>
+                <p class="quebra"></p>
+                
+                <input class="cxcLinha" type="text" name="" placeholder="Nome Fantasia" />
+                <p class="quebra"></p>
+                
+                <input type="text" name="" placeholder="CNPJ" />
+                
+                <input class="AlinhaDireita" type="text" name="" placeholder="Inscrição" />
+                
+            </div>
+            
+            <div class="pesq2">
+                
+                <label>Compra</label>
+                <p class="quebra"></p>
+                <select class="combo"  name="" style="margin-right: 170px;">
+                    <option>Situação</option>
+                    <option>Recebida</option>
+                    <option>Lançada</option>
+                    <option>Processada</option>
+                    <option>Cancelada</option>
+                </select>
+                
+                <input class="cxcTxtData"  type="text" name=""  placeholder="Dt Lançamento" />
+                
+                <input style="height: 30px;" class="AlinhaDireita" type="submit" value="Procurar" />
+            </div>
+            <div class="scrolTable">
+
+                <table id="table"  cellspacing="1" cellpadding="1" align="center" border="1">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Situação</th>
+                            <th>Dt Lançamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="texto">
+                
+                <label>Fornecedor</label>
+                 <p class="quebra"></p>
+                 
+                 <label class="linha" style="margin-right: 51px;">Fantasia</label>
+                 <input style="width: 341px;" type="text" name="" value="" />
+                 <p class="quebra"></p>
+                 
+                 <label class="linha" style="margin-right: 67px;">CNPJ</label>
+                 <input style="width: 100px;" type="text" name="" value="" />
+                 
+                 <label class="linha" style="margin-left: 20px; margin-right: 50px;">Inscrição</label>
+                 <input style="width: 100px;" type="text" name="" value="" />
+                <p class="quebra"></p>
+                
+                
+                <label>Compra</label>
+                 <p class="quebra"></p>
+                 
+                 <label class="linha" style="margin-right: 20px;">Identificação</label>
+                 <input style="width: 100px;" type="text" name="" value="" />
+                
+                 <label class="linha" style="margin-left: 20px; margin-right: 53px;">Situação</label>
+                 <input style="width: 100px;" id="cxcSituacao" type="text" name="" value="" />
+                <p class="quebra"></p>
+                
+                <label class="linha" style="margin-right: 5px;">Dt Lançamento</label>
+                <input class="cxcTxtData"  type="text" name="" value="" />
+                
+                <label class="linha" style="margin-left: 20px; margin-right: 5px;">Dt Recebimento</label>
+                <input class="cxcTxtData"  type="text" name="" value="" />
+                <p class="quebra"></p>
+                
+
+                <div class="scrolTabelaProduto">
+                
+                <table id="tabelaProduto" border="1" cellspacing="1" cellpadding="1" >
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Qtde Pedida</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+                </div>
+                
+                <label class="linha">Forma de Pagamento</label>
+                <input type="text" name="" value="" />
+                 <p class="quebra"></p>
+  
+                     <input style="margin-right: 10px; height: 30px;" type="button" value="Conferir" 
+                            onclick="window.open('PedidoCompraConferir.html','_parent')" />
+       
+                 <input style="margin-right: 10px; height: 30px;" type="button" value="Finalizar"
+                        onclick="window.open('PedidoCompraFinalizar.html','_parent')" />
+        
+                 <input style="height: 30px;" class="sair" type="submit" value="Cancelar" />
+            
+                <input style="height: 30px;" class="AlinhaDireita" type="button" value="Sair"
+                       onclick="window.open('Menu.html','_parent')"  />
+              
+                
+            </div>
+            
+        </div>   
+    </body>
+</html>

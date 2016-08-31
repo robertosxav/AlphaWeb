@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Alpha</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="GerentedeCompra.css">
+    </head>
+    <body>
+        <div class="norte"> 
+                <h1 id="titulo"> Pedido de Vendas</h1>
+        </div>
+        
+        <div class="pesq1">
+            
+                <p> Cliente </p>
+                <p class="quebra"></p>
+                
+                <input class="cxcLinha" type="text" name="" placeholder="Nome" />
+                <p class="quebra"></p>
+                
+                <input type="text" name="" placeholder="CNPJ" />
+                
+                <input style="margin-right: 15px;" class="cxcTxtData" type="text" name="" placeholder="Dt Lançamento" />
+            
+                
+                <input style="height: 30px;" class="AlinhaDireita" type="submit"  value="Procurar" />
+        </div>
+        
+        <div class="pesq2">
+            <p>Cliente</p>
+            <p class="quebra"></p>
+            
+            <p class="linha" style="margin-right: 10px;">Nome</p>
+            <input style="width: 400px;" type="text" name="" value="" />
+            <p class="quebra"></p>
+            
+            <p class="linha" style="margin-right: 12px;" >CNPJ</p>
+            <input type="text" name="" value="" />
+            
+            
+            <p class="linha" style="margin-left: 10px; margin-right: 10px;">Telefone</p>
+            <input style="width: 120px;" type="text" name="" value="" />
+            <p class="quebra"></p>
+            
+            
+            
+        </div>
+        
+        <div class="scrolTable">
+        
+            <table id="table"  cellspacing="1" cellpadding="1" align="center" border="1">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Dt Lançamento</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+        <div class="texto">
+            
+            <div class="scrolTabelaCliente" style="margin-top: 9px; margin-bottom: 10px;">
+            <table id="tabelaCliente" cellspacing="1" cellpadding="1" align="center" border="1">
+                <thead>
+                    <tr>
+                        <th>Pedido</th>
+                        <th>Qtde Pedida</th>
+                        <th>Valor Total</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+             </div>    
+            
+            <p>Venda</p>
+            <p class="quebra"></p>
+            
+            
+            <p class="linha" style="margin-right:60px;">Id</p>
+            <input style="width: 100px;"  type="text" name="" value="" />
+            
+            <p class="linha" style="margin-right: 10px;margin-left: 20px;">Dt Lançamento</p>
+            <input class="cxcTxtData"  type="text" name="" value="" />
+            <p class="quebra"></p>
+            
+            <p class="linha" style="margin-right: 5px;">Qtde Total</p>
+            <input style="width: 100px;" type="text" name="" value="" />
+            
+            
+            <p class="linha" style="margin-left: 20px; margin-right: 38px;">Valor Total</p>
+            <input style="width: 100px;" type="text" name="" value="" />
+            <p class="quebra"></p>
+            
+            <div class="scrolTabelaProduto" style="margin-bottom: 20px;">
+                
+            <table id="tabelaProduto" border="1" cellspacing="1" cellpadding="1" align="center">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Qtde Pedida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>    
+            </div>
+            
+            <p class="linha" style="margin-right: 10px;">Forma de Pagamento</p>
+            <input type="text" name="" value="" />
+            <p class="quebra"></p>
+            
+            <input style="height: 30px;" type="button" value="Autorizar Crédito"  />
+            <input style="margin-bottom: 10px; height: 30px;" class="AlinhaDireita" type="button" value="Sair"
+                    onclick="window.open('Menu.html', '_parent')"/>
+            
+        </div>
+        
+    </body>
+</html>

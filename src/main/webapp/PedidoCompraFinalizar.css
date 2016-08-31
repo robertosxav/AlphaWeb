@@ -1,0 +1,103 @@
+html, body {
+    position:absolute;
+    float: left;
+    top:0;
+    left: 50px;
+    width:1024px;
+    height: 750px;
+    margin: auto;
+    align-content: center;
+    background-color: whitesmoke;
+     font-size: 18px;
+              font-style:normal;
+               
+
+}
+.norte{
+     font-family: sans-serif;
+   font-size: 24px;
+    position:relative;
+    float: left;
+    top:0;
+    left: 100px;
+    width:1024px;
+    height:70px;	
+   
+
+}
+#titulo{
+    color:black;
+    font-size: 28px;
+    text-align: center;
+}
+.informacao{
+    position:relative;
+    float: left;
+    left: 100px;
+    top:10px;
+    width: 1024px;
+    height: 200px;
+
+}
+.tabela1{
+    position:relative;
+    float: left;
+    left: 100px;
+    width: 1024px;
+    height: 350px;
+    overflow-y: scroll;
+     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tblProduto td{
+    height: 20px;
+    background-color: white;
+    align-content: center;
+}
+.tblProduto td:first-child{
+    width: 100px;
+}
+.tblProduto td:first-child+td{
+    width: 300px;
+}
+.tblProduto td:first-child+td+td{
+    width: 200px;
+}
+.tblProduto td:first-child+td+td+td{
+    width: 200px;
+}
+.tblProduto td:first-child+td+td+td+td{
+    width: 200px;
+}
+.tblProduto td:first-child+td+td+td+td+td{
+    width: 200px;
+}
+.tblProduto{
+    border-collapse: collapse;
+    display: table-cell;
+    width: 1024px;
+    height: 500px;
+   
+}
+
+p{
+    display: inline;
+}
+.informacao2{
+    position:relative;
+    float: left;
+    left: 100px;
+    width: 1024px;
+    margin-bottom: 10px;
+}
+.sair{
+    position:relative;
+    float: left;
+    left: 100px;
+    width: 1024px;
+}
+.AlinhaDireita{
+    float: right;
+
+}

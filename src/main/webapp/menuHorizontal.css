@@ -85,14 +85,14 @@ div.contenedor:hover #menu ul {
     padding: 0;
     list-style: none;
     width: 150px;
-    
-    
+
+
 }
 
 div.contenedor:hover #menu ul li {
     position: relative;
     font-size: 20px;
-    
+
 }
 
 div.contenedor:hover #menu ul li a {
@@ -115,7 +115,7 @@ div.contenedor #menu ul {
 
 div.contenedor #menu ul li {
     color:white;
-    
+
 }
 
 div.contenedor #menu ul li a {
@@ -126,5 +126,4 @@ div.contenedor #menu ul li a {
     color:white;
     opacity: 0;
 }
-
 

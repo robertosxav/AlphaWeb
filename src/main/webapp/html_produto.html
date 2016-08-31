@@ -1,0 +1,125 @@
+<!DOCYTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<title> Cadastro de Produto </title>
+		<script src="tabs.js" type="text/javascript"></script>
+  		<link rel="stylesheet" type="text/css" href="tabs1.css" />
+                
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> 
+                
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+                <style>
+                    .w3-btn{width:150px;}
+                </style>
+	</head>
+	<body>
+		<div class="toolbar"> 
+                    <label class="produto">Produto</label>
+                    <input class="campo_produto" type="text">
+                    <!--input class="botao_procurar" type="button" value="Procurar"-->
+                    <p class="botao_procurar" ><button class="w3-btn w3-dark-grey">Procurar</button>
+                </div>
+		<div class="esquerda"> 
+                    <label class="categoria">Categoria</label>                   
+                
+                    <ul class="tree_estilo">
+                        <li><span class="Collapsable">Maquiagem e Esmalte</span><ul >
+                                <li><span class="Collapsable">Olhos</span><ul >
+                                        <li><span class="Collapsable">Sombra</span></li>
+                                        <li><span class="Collapsable">Delineador</span></li>
+                                        <li><span class="Collapsable">Mascara</span></li>
+                                        <li><span class="Collapsable">Lapis para Olhos</span></li>
+                                        <li><span class="Collapsable">Lapis para sombrancelhas</span></li>
+                                        <li><span class="Collapsable">Demaquilante</span></li>
+                                        <li><span class="Collapsable">Pó Compacto</span></li>
+                                    </ul>
+                                <li><span class="Collapsable">Labio</span><ul >
+                                        <li><span class="Collapsable">Batom</span></li>
+                                        <li><span class="Collapsable">Brilho Labial</span></li>
+                                        <li><span class="Collapsable">Condicionador Labial</span></li>
+                                        <li><span class="Collapsable">Contorno</span></li>
+                                    </ul>
+                                <li><span class="Collapsable">Esmaltes</span></li>  
+                    </ul>
+                </li>
+                <li><span class="Collapsable">Perfumaria</span><ul >
+                        <li><span class="Collapsable">Homens</span></li>
+                        <li><span class="Collapsable">Infantil</span><ul >
+                                <li><span class="Collapsable">Bebês</span></li>
+                                <li><span class="Collapsable">Meninos</span></li>
+                                <li><span class="Collapsable">Meninas</span></li>
+                            </ul>
+                        <li><span class="Collapsable">Mulheres</span><ul >
+                                <li><span class="Collapsable">Perfumes</span></li>
+                                <li><span class="Collapsable">Loção Perfumada</span></li>
+
+                            </ul>
+                    </ul>
+                </li>
+                <li><span class="Collapsable">Cabelos</span><ul >
+                        <li><span class="Collapsable">Gel Fixador</span></li>
+                        <li><span class="Collapsable">Tratamento Capilar</span></li>
+                        <li><span class="Collapsable">Condicionardo</span></li>
+                        <li><span class="Collapsable">Finalizador</span></li>
+                        <li><span class="Collapsable">Shampoo</span><ul >
+                                <li><span class="Collapsable">Homens</span></li>
+                                <li><span class="Collapsable">Mulheres</span></li>
+
+                            </ul>
+                    </ul>
+                </li>
+                <li><span class="Collapsable">Corpo e Banho</span><ul >
+                        <li><span class="Collapsable">Linha Solar</span></li>
+                        <li><span class="Collapsable">Óleos</span></li>
+                        <li><span class="Collapsable">Hidratante</span></li>
+                        <li><span class="Collapsable">Desodorantes</span><ul >
+                                <li><span class="Collapsable">Homens</span></li>
+                                <li><span class="Collapsable">Mulheres</span></li>
+
+                            </ul>
+                        <li><span class="Collapsable">Sabontes</span><ul >
+                                <li><span class="Collapsable">Homens</span></li>
+                                <li><span class="Collapsable">Mulheres</span></li>
+
+                            </ul>
+                    </ul>
+
+                <li><span class="Collapsable">Rosto</span><ul >
+                        <li><span class="Collapsable">Esfoliante e Máscara</span></li>
+                        <li><span class="Collapsable">Hidratante e Creme</span></li>
+                        <li><span class="Collapsable">Limpeza de Pele</span></li>
+                        <li><span class="Collapsable">Pré-Barba</span></li>
+                        <li><span class="Collapsable">Pós-Barba</span></li>
+
+                    </ul>    
+
+                    </ul>
+                    <script type="text/javascript">
+                        $(".Collapsable").click(function () {
+
+                            $(this).parent().children().toggle();
+                            $(this).toggle();
+
+                        });
+                    </script>
+                </div>
+                
+                
+		<div class="centro">
+			<div id="content">
+				<div id="tabs">
+					<ul>
+						<li><a href="#" rel="tab-produto.html" class="selected"  onclick="loadit(this)">Produto</a></li>
+						<li><a href="#" rel="tab-informacoes.html" onClick="loadit(this)">Informações</a></li>
+						<li><a href="#" rel="tab-arvore.html" onClick="loadit(this)">Gerenciamento da Árvore</a></li>
+					</ul>
+					<iframe id="container"></iframe>
+   				</div>
+			</div>
+		</div>
+		<div class="rodape"><p class="botao_gerenciar" ><button class="w3-btn w3-dark-grey">Gerenciar Árvore</button></div>
+	</body>
+</html>

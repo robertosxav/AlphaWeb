@@ -1,0 +1,82 @@
+<!DOCYTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<title> Vendas de Produtos </title>
+		<script src="tabs.js" type="text/javascript"></script>
+  		<link rel="stylesheet" type="text/css" href="tabs.css" />
+  		<link rel="stylesheet" type="text/css" href="treview.css">
+	</head>
+	<body>
+		<div class="toolbar"> AlphaCosmeticos - Vendas </div>
+
+		<div class="esquerda"> <h2>Catálogo</h2> 
+			<div class="css-treeview">
+				<ul>
+					<li><input type="checkbox" id="item-0" checked="checked" /><label for="item-0">Maquiagem e Esmalte</label>
+						<ul>
+							<li><input type="checkbox" id="item-0-0" checked="checked" /><label for="item-0-0">Ohos</label>
+								<ul>
+									<li><a href="./">Sombra</a></li>
+									<li><a href="./">Delineador</a></li>
+									<li><a href="./">Mascara</a></li>
+									<li><a href="./">Lápis para olhos</a></li>
+									<li><a href="./">Lápis para sombrancelhas</a></li>
+									<li><a href="./">Demaquilante</a></li>
+									<li><a href="./">Pó Compacto</a></li>
+								</ul>
+							</li>
+							<li><input type="checkbox" id="item-0-1" checked="checked" /><label for="item-0-1">Lábio</label>
+								<ul>
+									<li><a href="./">Batom</a></li>
+									<li><a href="./">Brilho Labial</a></li>
+									<li><a href="./">Condicionador Labial</a></li>
+									<li><a href="./">Contorno</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><input type="checkbox" id="item-1" checked="checked" /><label for="item-1">Perfumaria</label>
+						<ul>
+							<li><input type="checkbox" id="item-1-0" checked="checked" /><label for="item-1-0">Infantil</label>
+								<ul>
+									<li><a href="./">Bebês</a></li>
+									<li><a href="./">Meninos</a></li>
+									<li><a href="./">Meninas</a></li>
+								</ul>
+							</li>
+							<li><input type="checkbox" id="item-1-1" checked="checked" /><label for="item-1-1">Mulheres</label>
+								<ul>
+									<li><a href="./">Perfumes</a></li>
+									<li><a href="./">Loção Perfumada</a></li>
+								</ul>
+							</li>
+							<li><input type="checkbox" id="item-0-2" checked="checked" /><label for="item-0-2">Masculino</label>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="centro">
+			<div id="content">
+				<div id="tabs">
+					<ul>
+						<li><a href="#" rel="tab-catalogo.html" class="selected"  onclick="loadit(this)">Catálogo</a></li>
+						<li><a href="#" rel="tab-carrinho.html" onClick="loadit(this)">Carrinho</a></li>
+						<li><a href="#" rel="tab-formapgmt.html" onClick="loadit(this)">Forma de Pagamento</a></li>
+					</ul>
+					<iframe id="container"></iframe>
+   				</div>
+			</div>
+		</div>
+		
+		<div class="rodape">
+			<p></p>
+            
+            <input style="margin-left: 91%" class="btn" type="button" name="btnSair"
+               value="Sair" onclick="window.open('Menu.html', '_parent')" />
+		</div>
+
+	</body>
+</html>

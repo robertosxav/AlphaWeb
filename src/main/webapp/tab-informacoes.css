@@ -1,0 +1,107 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.4 arial, sans, sans-serif;
+}
+
+form {
+    width: 320px;
+    float: left;
+    margin: 0px;
+}
+form > div {
+    position: relative;
+    overflow: hidden;
+}
+form input, form textarea {
+    width: 100%;
+    border: 2px solid gray;
+    background: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 8px 12px;
+    outline: 0;
+}
+form input:valid, form textarea:valid {
+    background: white;
+}
+form input:focus, form textarea:focus {
+    border-color: #666666;
+    /*#f06d06*/
+}
+form input:focus + label, form textarea:focus + label {
+    background: #666666;
+    color: white;
+    font-size: 70%;
+    padding: 1px 6px;
+    z-index: 2;
+    text-transform: uppercase;
+}
+form label {
+    transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+    position: absolute;
+    color: #999;
+    padding: 7px 6px;
+}
+form textarea {
+    display: block;
+    resize: vertical;
+}
+
+form.dados input, form.dados textarea {
+    padding: 12px 12px 12px 12px;
+}
+form.dados label {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+form.dados input:focus, form.dados textarea:focus {
+    padding: 4px 6px 20px 6px;
+}
+form.dados input:focus + label, form.dados textarea:focus + label {
+    top: 100%;
+    margin-top: -16px;
+}
+
+form.percentual label {
+    top: 2px;
+    right: 100%;
+    width: 100%;
+    margin-right: -100%;
+    bottom: 2px;
+}
+form.percentual input:focus + label, form.percentual textarea:focus + label {
+    right: 0;
+    margin-right: 0;
+    width: 40%;
+    padding-top: 5px;
+}
+
+/*div centro*/
+div.centro {
+    margin-left: 220px;
+    margin-right: 10px;
+    /*border: 1px solid blue;*/
+    height: 400px;
+}
+
+/*botoes*/
+ul {
+    /*margin-left: 165px;*/
+    margin-left: 40px;
+    list-style-type: none;
+    height: 100px;
+}
+
+ul li {
+    width: 200px;
+    height: 100px;
+    float: left;
+}
